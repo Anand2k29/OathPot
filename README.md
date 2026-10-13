@@ -12,7 +12,7 @@
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.24-363636?style=for-the-badge&logo=solidity)
 ![Tests](https://img.shields.io/badge/contract%20tests-14%2F14%20passing-b8f34a?style=for-the-badge&labelColor=0a0a0a)
 
-### [🚀 **Live MVP**](#-live-demo--judge-access) · [🎬 Demo script](DEMO_SCRIPT.md) · [🧱 Architecture](#-how-our-solution-works) · [🛠 Deploy](#-deploy-to-vercel)
+### [🚀 **Live MVP**](https://www.youtube.com/watch?v=yjco21XvzUE&feature=youtu.be) · [🎬 Demo script](DEMO_SCRIPT.md) · [🧱 Architecture](#-how-our-solution-works) · [🛠 Deploy](https://oath-pot.vercel.app/)
 
 </div>
 
@@ -220,11 +220,10 @@ npx hardhat run scripts/deploy.js --network monadTestnet
 
 | | Name | Role | Links |
 |---|---|---|---|
-| 👨‍💻 | **Team Member 1** | Founder · Product & Full-stack | [GitHub](https://github.com/your-handle) |
-| 🛡️ | **Team Member 2** | Smart contracts & Security | [GitHub](https://github.com/your-handle) |
-| 🎨 | **Team Member 3** | Design & Growth | [GitHub](https://github.com/your-handle) |
+| 👨‍💻 | **Anand Minejes** | Founder · Product & Full-stack | [GitHub](https://github.com/Anand2k29) |
+| 🛡️ | **Jyotasana** | Smart contracts & Security | [GitHub](https://github.com/Jyotasana17) |
 
-*(Edit this table and `frontend/lib/team.ts`.)*
+
 
 ---
 
