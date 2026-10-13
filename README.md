@@ -10,9 +10,9 @@
 ![Chain](https://img.shields.io/badge/Monad-Testnet-836ef9?style=for-the-badge&labelColor=0a0a0a)
 ![Next.js](https://img.shields.io/badge/Next.js-16-000?style=for-the-badge&logo=nextdotjs)
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.24-363636?style=for-the-badge&logo=solidity)
-![Tests](https://img.shields.io/badge/market%20tests-6%2F6%20passing-b8f34a?style=for-the-badge&labelColor=0a0a0a)
+![Tests](https://img.shields.io/badge/contract%20tests-14%2F14%20passing-b8f34a?style=for-the-badge&labelColor=0a0a0a)
 
-### [🚀 **Live MVP**](#-live-demo--judge-access) · [🎬 Demo script](DEMO_SCRIPT.md) · [🧱 Architecture](#-how-our-solution-works) · [🛠 Deploy](https://oath-pot.vercel.app/)
+### [🚀 **Live MVP**](#-live-demo--judge-access) · [🎬 Demo script](DEMO_SCRIPT.md) · [🧱 Architecture](#-how-our-solution-works) · [🛠 Deploy](#-deploy-to-vercel)
 
 </div>
 
@@ -143,7 +143,7 @@ flowchart LR
 
 | Judging criterion | How Oathpot answers it |
 |---|---|
-| **Technical execution** | Escrow, voting, settlement and a parimutuel market run on-chain. Market contract has a 6-test suite (pro-rata, insider ban, closed market, refund path, rounding, double-claim). |
+| **Technical execution** | Escrow, voting, settlement and a parimutuel market run on-chain. 14 contract tests (pot rules, majority voting, all-fail/all-succeed/dust settlement, market pro-rata, insider ban, refund path, rounding) plus a scripted end-to-end run of the real app code against a local chain. |
 | **Design & craft** | Odds, pool sizes and estimated payouts shown before every bet; explicit **risk disclosures** on create / join / trade. |
 | **Originality** | A *commitment share* primitive resolved by peer-verified, on-chain behaviour — not a faster clone of an existing DeFi product. |
 | **Founder & market readiness** | First user: student friend groups & campus clubs already using group chats for accountability. |
@@ -167,12 +167,14 @@ npm install
 npm run dev                     # http://localhost:3000
 ```
 
-**Contracts** (your existing Hardhat project in `/contracts`, plus this repo's market add-on):
+**Contracts** (Hardhat 2, in `/contracts`):
 
 ```bash
 cd contracts && npm install
-npx hardhat test                                   # incl. CommitmentMarket suite
-TOKEN=<MockUSDC address> npx hardhat run scripts/deploy-market.js --network monadTestnet
+cp .env.example .env            # add DEPLOYER_KEY=0x<throwaway testnet wallet>
+npx hardhat test                # 14 passing
+npx hardhat run scripts/deploy.js --network monadTestnet
+# → prints NEXT_PUBLIC_MOCK_USDC / POT_FACTORY / DEMO_POT / MARKET_ADDRESS — paste into .env.local and Vercel
 ```
 
 ## 🚀 Deploy to Vercel
@@ -218,11 +220,11 @@ TOKEN=<MockUSDC address> npx hardhat run scripts/deploy-market.js --network mona
 
 | | Name | Role | Links |
 |---|---|---|---|
-| 👨‍💻 | **Anand Minejes** | Founder · Product & Full-stack | [GitHub](https://github.com/Anand2k29) |
-| 🛡️ | **Jyotasana** | Smart contracts & Security | [GitHub](https://github.com/Jyotasana17) |
+| 👨‍💻 | **Team Member 1** | Founder · Product & Full-stack | [GitHub](https://github.com/your-handle) |
+| 🛡️ | **Team Member 2** | Smart contracts & Security | [GitHub](https://github.com/your-handle) |
+| 🎨 | **Team Member 3** | Design & Growth | [GitHub](https://github.com/your-handle) |
 
-
-
+*(Edit this table and `frontend/lib/team.ts`.)*
 
 ---
 
