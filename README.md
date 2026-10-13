@@ -12,7 +12,7 @@
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.24-363636?style=for-the-badge&logo=solidity)
 ![Tests](https://img.shields.io/badge/market%20tests-6%2F6%20passing-b8f34a?style=for-the-badge&labelColor=0a0a0a)
 
-### [🚀 **Live MVP**](#-live-demo--judge-access) · [🎬 Demo script](DEMO_SCRIPT.md) · [🧱 Architecture](#-how-our-solution-works) · [🛠 Deploy](#-deploy-to-vercel)
+### [🚀 **Live MVP**](#-live-demo--judge-access) · [🎬 Demo script](DEMO_SCRIPT.md) · [🧱 Architecture](#-how-our-solution-works) · [🛠 Deploy](https://oath-pot.vercel.app/)
 
 </div>
 
@@ -222,7 +222,7 @@ TOKEN=<MockUSDC address> npx hardhat run scripts/deploy-market.js --network mona
 | 🛡️ | **Jyotasana** | Smart contracts & Security | [GitHub](https://github.com/Jyotasana17) |
 
 
-*(Edit this table and `frontend/lib/team.ts`.)*
+
 
 ---
 
