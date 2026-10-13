@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%">
+  <defs><pattern id="d" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#0a0a0a" opacity=".18"/></pattern>
+    <style>
+      .t{font:700 112px 'Arial Black',Impact,sans-serif;letter-spacing:-4px}
+      .s{font:700 26px 'Courier New',monospace}
+      .tk{font:700 22px 'Courier New',monospace;fill:#ffd93d}
+      @keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-16px) rotate(4deg)}}
+      @keyframes spin{from{transform:scaleX(1)}50%{transform:scaleX(.08)}to{transform:scaleX(1)}}
+      @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-640px)}}
+      @keyframes pulse{50%{opacity:.35}}
+      .c1{animation:bob 3.2s ease-in-out infinite}.c2{animation:bob 4s ease-in-out -1.2s infinite}.c3{animation:bob 3.6s ease-in-out -2.2s infinite}
+      .coin{transform-box:fill-box;transform-origin:center;animation:spin 3s linear infinite}
+      .tick{animation:slide 14s linear infinite}.blink{animation:pulse 1.2s infinite}
+    </style></defs>
+  <rect width="1200" height="360" fill="#fff8e1"/><rect width="1200" height="360" fill="url(#d)"/>
+  <rect x="10" y="10" width="1180" height="340" fill="none" stroke="#0a0a0a" stroke-width="8"/>
+  <rect x="48" y="54" width="640" height="130" fill="#0a0a0a"/><rect x="40" y="46" width="640" height="130" fill="#ffd93d" stroke="#0a0a0a" stroke-width="6"/>
+  <text x="62" y="150" class="t" fill="#0a0a0a">OATHPOT</text>
+  <rect x="40" y="204" width="640" height="52" fill="#ff6b9d" stroke="#0a0a0a" stroke-width="5"/>
+  <text x="58" y="240" class="s" fill="#0a0a0a">Trade on human follow-through.</text>
+  <circle cx="60" cy="292" r="7" fill="#16a34a" stroke="#0a0a0a" stroke-width="3" class="blink"/><text x="80" y="299" class="s" font-size="20" fill="#0a0a0a">MVP LIVE · Monad Testnet · 0.8s finality</text>
+  <g class="c1"><g class="coin"><circle cx="860" cy="120" r="52" fill="#ffd93d" stroke="#0a0a0a" stroke-width="6"/><text x="860" y="140" text-anchor="middle" font-size="52" font-weight="700" font-family="Arial Black">$</text></g></g>
+  <g class="c2"><g class="coin"><circle cx="990" cy="210" r="42" fill="#4cd9ff" stroke="#0a0a0a" stroke-width="6"/><text x="990" y="227" text-anchor="middle" font-size="42" font-weight="700" font-family="Arial Black">$</text></g></g>
+  <g class="c3"><g class="coin"><circle cx="1110" cy="110" r="36" fill="#b8f34a" stroke="#0a0a0a" stroke-width="6"/><text x="1110" y="124" text-anchor="middle" font-size="36" font-weight="700" font-family="Arial Black">$</text></g></g>
+  <rect x="740" y="262" width="420" height="52" fill="#0a0a0a"/><rect x="740" y="262" width="420" height="52" fill="#0a0a0a"/>
+  <clipPath id="cp"><rect x="740" y="262" width="420" height="52"/></clipPath>
+  <g clip-path="url(#cp)"><g class="tick"><text x="750" y="297" class="tk">★ STAKE ★ CHECK IN ★ VERIFY ★ TRADE ODDS ★ SETTLE ★ CLAIM ★ STAKE ★ CHECK IN ★ VERIFY ★ TRADE ODDS ★ SETTLE ★ CLAIM</text></g></g>
+</svg>
